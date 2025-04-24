@@ -75,7 +75,7 @@ def get_answer(chain, query, embed_model):
     if is_response_confident(initial_response):
         return initial_response
 
-    loc = "./act_db"
+    loc = "./faq_db"
     relevant_docs = retrieve_from_faiss(query, loc, embed_model, top_k=5)
 
     # if not relevant_docs:
