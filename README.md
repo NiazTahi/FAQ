@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ```
 2. Set up your environment variables:
 ```
-cp .env.example .env
+touch .env
 ```
 3. Set your API keys:
 ```
